@@ -6,13 +6,12 @@ public class DesafioAdivinaNumero {
         Scanner scanner = new Scanner(System.in);
 
         int numeroAleatorio =  new Random().nextInt(100);
-        int numeroUsuario = 0;
         int intentos = 5;
         int i = 0;
 
         while (i < intentos) {
             System.out.println("Ingrese un número entre 0 y 100 para adivinar el número secreto: ");
-            numeroUsuario = scanner.nextInt();
+             int numeroUsuario = scanner.nextInt();
 
             if (numeroAleatorio == numeroUsuario){
                 System.out.println("¡Adivinaste!");
